@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStatusMon", "AppStatusMon\AppStatusMon.csproj", "{B6D95E70-5FD8-43FD-AA00-061A15E3701D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckUserSession", "CheckUserSession\CheckUserSession.csproj", "{1D5D72ED-8C1B-4D9B-B05E-D526D36DBD26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckUserSessionClient", "CheckUserSessionClient\CheckUserSessionClient.csproj", "{FE0D2C70-3B57-4A66-B0D9-80293C2EE61B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI3", "WinUI3\WinUI3.csproj", "{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,18 @@ Global
 		{FE0D2C70-3B57-4A66-B0D9-80293C2EE61B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE0D2C70-3B57-4A66-B0D9-80293C2EE61B}.Release|x64.ActiveCfg = Release|Any CPU
 		{FE0D2C70-3B57-4A66-B0D9-80293C2EE61B}.Release|x64.Build.0 = Release|Any CPU
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|Any CPU.Build.0 = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|x64.ActiveCfg = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|x64.Build.0 = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Debug|x64.Deploy.0 = Debug|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|Any CPU.ActiveCfg = Release|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|Any CPU.Build.0 = Release|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|Any CPU.Deploy.0 = Release|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.ActiveCfg = Release|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.Build.0 = Release|x64
+		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
