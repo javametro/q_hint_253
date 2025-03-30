@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckUserSessionClient", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI3", "WinUI3\WinUI3.csproj", "{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteManager", "SqliteManager\SqliteManager.csproj", "{048FF273-CFE9-4927-AED0-D9B546D37F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIA", "UIA\UIA.csproj", "{F4523847-2523-477A-ADEB-51E77466D2FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,22 @@ Global
 		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.ActiveCfg = Release|x64
 		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.Build.0 = Release|x64
 		{318DD1F4-10C4-47B3-856D-FA5A0036CFAF}.Release|x64.Deploy.0 = Release|x64
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Debug|x64.Build.0 = Debug|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Release|x64.ActiveCfg = Release|Any CPU
+		{048FF273-CFE9-4927-AED0-D9B546D37F5E}.Release|x64.Build.0 = Release|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
