@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteManager", "SqliteMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIA", "UIA\UIA.csproj", "{F4523847-2523-477A-ADEB-51E77466D2FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStatusGetter", "ConsoleApp1\TestStatusGetter.csproj", "{58D676A3-9459-4260-996C-A290747145F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusGetter", "StatusGetter\StatusGetter.csproj", "{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,22 @@ Global
 		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|x64.ActiveCfg = Release|Any CPU
 		{F4523847-2523-477A-ADEB-51E77466D2FD}.Release|x64.Build.0 = Release|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Debug|x64.ActiveCfg = Debug|x64
+		{58D676A3-9459-4260-996C-A290747145F5}.Debug|x64.Build.0 = Debug|x64
+		{58D676A3-9459-4260-996C-A290747145F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{58D676A3-9459-4260-996C-A290747145F5}.Release|x64.Build.0 = Release|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Debug|x64.ActiveCfg = Debug|x64
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Debug|x64.Build.0 = Debug|x64
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Release|x64.ActiveCfg = Release|Any CPU
+		{4BCA70E0-D3E5-4E6E-B334-8BBB35F5BC58}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
