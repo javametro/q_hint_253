@@ -1,4 +1,5 @@
-﻿using StatusGetter;
+﻿using Microsoft.Win32;
+using StatusGetter;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -117,6 +118,78 @@ namespace StatusGetter
         public override string ToString()
         {
             return $"{FileName} ({FormattedSize}) - Modified: {LastWriteTime}";
+        }
+        /// <summary>
+        /// Gets the folder click behavior setting (single-click or double-click)
+        /// </summary>
+        /// <returns>Information about how folders open when clicked</returns>
+        public FolderClickBehavior GetFolderClickBehavior()
+        {
+            FolderClickBehavior behavior = new FolderClickBehavior
+            {
+                SingleClickOpen = false,
+                UnderlineLinks = false,
+                UnderlineMode = "Never"
+            };
+
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"))
+                {
+                    if (key != null)
+                    {
+                        // Check for FolderContentsInfoTip value (1 = single-click, 0 = double-click)
+                        object clickMode = key.GetValue("FolderContentsInfoTip");
+                        if (clickMode != null && int.TryParse(clickMode.ToString(), out int mode))
+                        {
+                            behavior.SingleClickOpen = mode == 1;
+                        }
+
+                        // For older Windows versions, the value might be called ClassicViewState
+                        if (clickMode == null)
+                        {
+                            object classicView = key.GetValue("ClassicViewState");
+                            if (classicView != null && int.TryParse(classicView.ToString(), out int classicMode))
+                            {
+                                behavior.SingleClickOpen = classicMode == 0;
+                            }
+                        }
+
+                        // Get underline settings
+                        object underlineMode = key.GetValue("IconsOnly");
+                        if (underlineMode != null && int.TryParse(underlineMode.ToString(), out int underlineValue))
+                        {
+                            behavior.UnderlineLinks = underlineValue == 0 || behavior.SingleClickOpen;
+
+                            if (behavior.SingleClickOpen)
+                            {
+                                object underlineHover = key.GetValue("WebViewBarricade");
+                                if (underlineHover != null && int.TryParse(underlineHover.ToString(), out int hoverValue))
+                                {
+                                    if (hoverValue == 1)
+                                    {
+                                        behavior.UnderlineMode = "Always";
+                                    }
+                                    else
+                                    {
+                                        behavior.UnderlineMode = "Hover";
+                                    }
+                                }
+                                else
+                                {
+                                    behavior.UnderlineMode = "Always";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting folder click behavior: {ex.Message}");
+            }
+
+            return behavior;
         }
     }
 
@@ -270,6 +343,47 @@ namespace StatusGetter
             return folderNames;
         }
     }
+    /// <summary>
+    /// Contains information about folder click behavior settings
+    /// </summary>
+    public class FolderClickBehavior
+    {
+        /// <summary>
+        /// Whether folders open with a single click instead of double-click
+        /// </summary>
+        public bool SingleClickOpen { get; set; }
+
+        /// <summary>
+        /// Whether to underline folder names
+        /// </summary>
+        public bool UnderlineLinks { get; set; }
+
+        /// <summary>
+        /// Underline mode for folder links (Never, Hover, Always)
+        /// </summary>
+        public string UnderlineMode { get; set; }
+
+        /// <summary>
+        /// User-friendly description of the click behavior
+        /// </summary>
+        public string Description
+        {
+            get
+            {
+                return SingleClickOpen
+                    ? $"Single-click to open (Underline: {UnderlineMode})"
+                    : "Double-click to open";
+            }
+        }
+
+        /// <summary>
+        /// Returns a string representation of the folder click behavior
+        /// </summary>
+        public override string ToString()
+        {
+            return Description;
+        }
+    }
 }
 
 
@@ -286,4 +400,14 @@ namespace StatusGetter
 //{
 //    Console.WriteLine($"{file.FileName} - {file.FormattedSize} - Last modified: {file.LastWriteTime}");
 //}
+
+
+
+// Example: Get folder click behavior
+//IFolderInfo folderInfo = new FolderInfo();
+//FolderClickBehavior clickBehavior = folderInfo.GetFolderClickBehavior();
+//Console.WriteLine($"Folder click behavior: {clickBehavior.Description}");
+//Console.WriteLine($"Single-click to open: {clickBehavior.SingleClickOpen}");
+//Console.WriteLine($"Underline links: {clickBehavior.UnderlineLinks}");
+//Console.WriteLine($"Underline mode: {clickBehavior.UnderlineMode}");
 

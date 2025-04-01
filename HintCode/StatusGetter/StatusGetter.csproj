@@ -52,6 +52,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,14 +64,19 @@
   <ItemGroup>
     <Compile Include="ApplicationInstallStatus.cs" />
     <Compile Include="BeforeOOBEFileInfo.cs" />
+    <Compile Include="CameraInfo.cs" />
     <Compile Include="FileUtil.cs" />
     <Compile Include="FolderInfo.cs" />
     <Compile Include="LocalAreaNetworkDeviceInfo.cs" />
     <Compile Include="MonitorInfo.cs" />
+    <Compile Include="MouseInfo.cs" />
+    <Compile Include="PCTypeInfo.cs" />
     <Compile Include="PhotoInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryUtil.cs" />
     <Compile Include="RunningProcessInfo.cs" />
     <Compile Include="StorageInfo.cs" />
+    <Compile Include="TaskBarAppInfo.cs" />
     <Compile Include="WallPaperInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
