@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2CC28BB-FD0E-4B82-9EAA-2D7D83C889CD}</ProjectGuid>
+    <ProjectGuid>{0169089B-59AC-4F91-8CC3-CB9009841A8F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XmlParser</RootNamespace>
-    <AssemblyName>XmlParser</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>EventBasedNotification</RootNamespace>
+    <AssemblyName>EventBasedNotification</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

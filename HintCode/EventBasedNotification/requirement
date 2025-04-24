@@ -1,0 +1,4 @@
+create a program listen an event.
+- if the event fired, then get the eventId from the event and output the eventId.
+- the event fired based communication via pipe, but for test purpose, you can make dummy event fired.
+- design the code as interface for other to call.

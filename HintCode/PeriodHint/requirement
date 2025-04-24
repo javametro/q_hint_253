@@ -1,0 +1,10 @@
+We have a list to output the list content sequence.
+- initial list with 0 items
+- if user has 2 weeks not open notepad.exe, then add an item to the list, and output it 
+- the item has a status determine the item has been read.
+- if user make the item to read status, then mark it as read, or else the item keep unread status. 
+- then 2 weeks later, user in this period also not open notepad, then add an new item to the list, and output it. 
+- the repeat the above logic until the list have 3 items, then another new item is come, if not have read item, then replace the oldest item, if have read item, remove the read item and add the new item, and keep the list have 3 items maximum.
+
+please help me desgin this application, I want the code can used for others, so you must make the logic as an interface, then I can call it in other place.
+please do it.

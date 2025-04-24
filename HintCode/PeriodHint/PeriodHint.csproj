@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2CC28BB-FD0E-4B82-9EAA-2D7D83C889CD}</ProjectGuid>
+    <ProjectGuid>{2D25A1B4-5B20-4E60-889F-6C8369565B2E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XmlParser</RootNamespace>
-    <AssemblyName>XmlParser</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>PeriodHint</RootNamespace>
+    <AssemblyName>PeriodHint</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
