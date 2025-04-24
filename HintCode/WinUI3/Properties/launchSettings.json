@@ -1,9 +1,7 @@
 {
   "profiles": {
     "WinUI3 (Package)": {
-      "commandName": "MsixPackage",
-      "remoteDebugEnabled": true,
-      "remoteDebugMachine": "192.168.3.85"
+      "commandName": "MsixPackage"
     },
     "WinUI3 (Unpackaged)": {
       "commandName": "Project"
